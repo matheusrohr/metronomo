@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Metronomo</title>
+	<link rel="stylesheet" type="text/css" href="./css_metronomo.css">
+</head>
+<body>
+	<nav id="nav_metronomo">
+		<h1 class="titulo">METRONOMO</h1>
+			<audio id="metronomo" ></audio>
+
+		<div id="beet_color">
+			<ul id="beet_color_ul">
+				<li class="beet_color_li"></li>
+				<li class="beet_color_li"></li>
+				<li class="beet_color_li"></li>
+				<li class="beet_color_li"></li>
+			</ul>
+		</div>
+		
+		<div id="n_bpm">
+				<label>BPM</label>
+				<p id="bpm_value">60</p>
+				<input type="range" id="BPM_Range" name="BPM_Range" min="30" max="240" value="60">
+		</div>
+
+		<button id="ButtonStart" class="ButtonBeep" onclick="Init.start()">START</button>
+	</nav>
+
+<script type="text/javascript" src="metronomo.js"></script>
+</body>
+</html>
